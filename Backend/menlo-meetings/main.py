@@ -15,11 +15,27 @@
 # limitations under the License.
 #
 import webapp2
+from google.appengine.ext import db
+
+class Data(db.model):
+    data = db.StringProperty(required=True)
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
+        da = db.GqlQuery("SELECT * FROM Data")
+        self.reponse.write(da[0].data)
+
+
+class AddHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write('Salve munde!')
+        self.response.write(self.request.get('name'))
+        d = Data(name=self.request.get('name'))
+        d.put()
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/add', AddHandler)
 ], debug=True)
