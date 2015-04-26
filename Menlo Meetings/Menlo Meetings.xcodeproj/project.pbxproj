@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAA0F6571AED8900005FE251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6561AED8900005FE251 /* main.m */; };
+		BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6591AED8900005FE251 /* AppDelegate.m */; };
+		BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F65C1AED8900005FE251 /* FirstViewController.m */; };
+		BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F65F1AED8900005FE251 /* SecondViewController.m */; };
+		BAA0F6631AED8900005FE251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6611AED8900005FE251 /* Main.storyboard */; };
+		BAA0F6651AED8900005FE251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6641AED8900005FE251 /* Images.xcassets */; };
+		BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6661AED8900005FE251 /* LaunchScreen.xib */; };
+		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAA0F66E1AED8900005FE251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAA0F6491AED8900005FE251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA0F6501AED8900005FE251;
+			remoteInfo = "Menlo Meetings";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAA0F6511AED8900005FE251 /* Menlo Meetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menlo Meetings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA0F6551AED8900005FE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA0F6561AED8900005FE251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAA0F6581AED8900005FE251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAA0F6591AED8900005FE251 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAA0F65B1AED8900005FE251 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BAA0F65C1AED8900005FE251 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BAA0F65E1AED8900005FE251 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BAA0F65F1AED8900005FE251 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BAA0F6621AED8900005FE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAA0F6641AED8900005FE251 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAA0F6671AED8900005FE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BAA0F66D1AED8900005FE251 /* Menlo MeetingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menlo MeetingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA0F6721AED8900005FE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menlo_MeetingsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAA0F64E1AED8900005FE251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA0F66A1AED8900005FE251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAA0F6481AED8900005FE251 = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6531AED8900005FE251 /* Menlo Meetings */,
+				BAA0F6701AED8900005FE251 /* Menlo MeetingsTests */,
+				BAA0F6521AED8900005FE251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAA0F6521AED8900005FE251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6511AED8900005FE251 /* Menlo Meetings.app */,
+				BAA0F66D1AED8900005FE251 /* Menlo MeetingsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA0F6531AED8900005FE251 /* Menlo Meetings */ = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6581AED8900005FE251 /* AppDelegate.h */,
+				BAA0F6591AED8900005FE251 /* AppDelegate.m */,
+				BAA0F65B1AED8900005FE251 /* FirstViewController.h */,
+				BAA0F65C1AED8900005FE251 /* FirstViewController.m */,
+				BAA0F65E1AED8900005FE251 /* SecondViewController.h */,
+				BAA0F65F1AED8900005FE251 /* SecondViewController.m */,
+				BAA0F6611AED8900005FE251 /* Main.storyboard */,
+				BAA0F6641AED8900005FE251 /* Images.xcassets */,
+				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
+				BAA0F6541AED8900005FE251 /* Supporting Files */,
+			);
+			path = "Menlo Meetings";
+			sourceTree = "<group>";
+		};
+		BAA0F6541AED8900005FE251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6551AED8900005FE251 /* Info.plist */,
+				BAA0F6561AED8900005FE251 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAA0F6701AED8900005FE251 /* Menlo MeetingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */,
+				BAA0F6711AED8900005FE251 /* Supporting Files */,
+			);
+			path = "Menlo MeetingsTests";
+			sourceTree = "<group>";
+		};
+		BAA0F6711AED8900005FE251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA0F6721AED8900005FE251 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAA0F6501AED8900005FE251 /* Menlo Meetings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA0F6771AED8900005FE251 /* Build configuration list for PBXNativeTarget "Menlo Meetings" */;
+			buildPhases = (
+				BAA0F64D1AED8900005FE251 /* Sources */,
+				BAA0F64E1AED8900005FE251 /* Frameworks */,
+				BAA0F64F1AED8900005FE251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Menlo Meetings";
+			productName = "Menlo Meetings";
+			productReference = BAA0F6511AED8900005FE251 /* Menlo Meetings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAA0F66C1AED8900005FE251 /* Menlo MeetingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA0F67A1AED8900005FE251 /* Build configuration list for PBXNativeTarget "Menlo MeetingsTests" */;
+			buildPhases = (
+				BAA0F6691AED8900005FE251 /* Sources */,
+				BAA0F66A1AED8900005FE251 /* Frameworks */,
+				BAA0F66B1AED8900005FE251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA0F66F1AED8900005FE251 /* PBXTargetDependency */,
+			);
+			name = "Menlo MeetingsTests";
+			productName = "Menlo MeetingsTests";
+			productReference = BAA0F66D1AED8900005FE251 /* Menlo MeetingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAA0F6491AED8900005FE251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Akshay Srivatsan";
+				TargetAttributes = {
+					BAA0F6501AED8900005FE251 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					BAA0F66C1AED8900005FE251 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = BAA0F6501AED8900005FE251;
+					};
+				};
+			};
+			buildConfigurationList = BAA0F64C1AED8900005FE251 /* Build configuration list for PBXProject "Menlo Meetings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAA0F6481AED8900005FE251;
+			productRefGroup = BAA0F6521AED8900005FE251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA0F6501AED8900005FE251 /* Menlo Meetings */,
+				BAA0F66C1AED8900005FE251 /* Menlo MeetingsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAA0F64F1AED8900005FE251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA0F6631AED8900005FE251 /* Main.storyboard in Resources */,
+				BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */,
+				BAA0F6651AED8900005FE251 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA0F66B1AED8900005FE251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA0F64D1AED8900005FE251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
+				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
+				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
+				BAA0F6571AED8900005FE251 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA0F6691AED8900005FE251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAA0F66F1AED8900005FE251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA0F6501AED8900005FE251 /* Menlo Meetings */;
+			targetProxy = BAA0F66E1AED8900005FE251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAA0F6611AED8900005FE251 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA0F6621AED8900005FE251 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAA0F6661AED8900005FE251 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA0F6671AED8900005FE251 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAA0F6751AED8900005FE251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA0F6761AED8900005FE251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAA0F6781AED8900005FE251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Menlo Meetings/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAA0F6791AED8900005FE251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Menlo Meetings/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAA0F67B1AED8900005FE251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Menlo MeetingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menlo Meetings.app/Menlo Meetings";
+			};
+			name = Debug;
+		};
+		BAA0F67C1AED8900005FE251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Menlo MeetingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menlo Meetings.app/Menlo Meetings";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAA0F64C1AED8900005FE251 /* Build configuration list for PBXProject "Menlo Meetings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA0F6751AED8900005FE251 /* Debug */,
+				BAA0F6761AED8900005FE251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA0F6771AED8900005FE251 /* Build configuration list for PBXNativeTarget "Menlo Meetings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA0F6781AED8900005FE251 /* Debug */,
+				BAA0F6791AED8900005FE251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAA0F67A1AED8900005FE251 /* Build configuration list for PBXNativeTarget "Menlo MeetingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA0F67B1AED8900005FE251 /* Debug */,
+				BAA0F67C1AED8900005FE251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAA0F6491AED8900005FE251 /* Project object */;
+}
