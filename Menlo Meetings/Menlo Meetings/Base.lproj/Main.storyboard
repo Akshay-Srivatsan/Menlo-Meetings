@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -61,7 +61,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-61-myS">
                                 <rect key="frame" x="253" y="90" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-mZ-XH9">
@@ -73,7 +73,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfl-RM-xI0">
                                 <rect key="frame" x="254" y="157" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Event" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLf-bz-Fw5">
@@ -84,8 +84,23 @@
                                     <outlet property="delegate" destination="Pgp-66-ep0" id="NvW-EK-KoV"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date/Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-cb-w2s">
+                                <rect key="frame" x="68" y="328" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-m8-HaU">
+                                <rect key="frame" x="72" y="362" width="456" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="ZFm-YY-Z0v"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="451784666.71696699">
+                                    <!--2015-04-26 23:44:26 +0000-->
+                                </date>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-Cf-zZz">
-                                <rect key="frame" x="283" y="337" width="34" height="30"/>
+                                <rect key="frame" x="283" y="526" width="34" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -99,6 +114,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ACZ-Cf-zZz" secondAttribute="trailing" constant="60" id="6Jf-Ht-Tj7"/>
                             <constraint firstItem="XE5-61-myS" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfA-h5-7iF"/>
                             <constraint firstItem="ACZ-Cf-zZz" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfF-7I-6rs"/>
+                            <constraint firstItem="GYR-m8-HaU" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="55" id="P0d-bK-xEU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mLf-bz-Fw5" secondAttribute="trailing" constant="60" id="h9p-ld-LGQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="l3e-mZ-XH9" secondAttribute="trailing" constant="60" id="hWF-Rr-mzi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XE5-61-myS" secondAttribute="trailing" constant="60" id="k5d-hC-lIi"/>
@@ -106,6 +122,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tfl-RM-xI0" secondAttribute="trailing" constant="60" id="rvP-CI-9GR"/>
                             <constraint firstItem="l3e-mZ-XH9" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="s7E-Pc-DIi"/>
                             <constraint firstItem="tfl-RM-xI0" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="vui-C8-0RM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYR-m8-HaU" secondAttribute="trailing" constant="55" id="z33-If-stH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
