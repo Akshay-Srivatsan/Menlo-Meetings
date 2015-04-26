@@ -174,7 +174,7 @@
             </objects>
             <point key="canvasLocation" x="675" y="-74"/>
         </scene>
-        <!--Item-->
+        <!--Subscriptions-->
         <scene sceneID="u1O-hj-qf2">
             <objects>
                 <viewController id="t1z-nb-Jk2" sceneMemberID="viewController">
@@ -187,7 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nMq-pC-56l"/>
+                    <tabBarItem key="tabBarItem" title="Subscriptions" id="nMq-pC-56l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odk-Ny-dXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
