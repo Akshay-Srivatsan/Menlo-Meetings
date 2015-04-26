@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MyTableViewController.h
 //  Menlo Meetings
 //
 //  Created by Akshay Srivatsan on 4/26/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface MyTableViewController : UITableViewController
 
 @end
-

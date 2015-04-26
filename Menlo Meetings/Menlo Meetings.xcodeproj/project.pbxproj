@@ -15,6 +15,7 @@
 		BAA0F6651AED8900005FE251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6641AED8900005FE251 /* Images.xcassets */; };
 		BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6661AED8900005FE251 /* LaunchScreen.xib */; };
 		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
+		BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		BAA0F66D1AED8900005FE251 /* Menlo MeetingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menlo MeetingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA0F6721AED8900005FE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menlo_MeetingsTests.m; sourceTree = "<group>"; };
+		BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				BAA0F65E1AED8900005FE251 /* SecondViewController.h */,
 				BAA0F65F1AED8900005FE251 /* SecondViewController.m */,
 				BAA0F6611AED8900005FE251 /* Main.storyboard */,
+				BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */,
+				BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */,
 				BAA0F6641AED8900005FE251 /* Images.xcassets */,
 				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
 				BAA0F6541AED8900005FE251 /* Supporting Files */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
+				BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
 				BAA0F6571AED8900005FE251 /* main.m in Sources */,
