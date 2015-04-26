@@ -16,6 +16,7 @@
 		BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6661AED8900005FE251 /* LaunchScreen.xib */; };
 		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
 		BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */; };
+		BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menlo_MeetingsTests.m; sourceTree = "<group>"; };
 		BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				BAA0F6641AED8900005FE251 /* Images.xcassets */,
 				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
 				BAA0F6541AED8900005FE251 /* Supporting Files */,
+				BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */,
+				BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */,
 			);
 			path = "Menlo Meetings";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
 				BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
+				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
 				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
 				BAA0F6571AED8900005FE251 /* main.m in Sources */,
 			);
@@ -430,6 +436,7 @@
 				BAA0F6791AED8900005FE251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAA0F67A1AED8900005FE251 /* Build configuration list for PBXNativeTarget "Menlo MeetingsTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				BAA0F67C1AED8900005FE251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

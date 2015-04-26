@@ -10,4 +10,6 @@
 
 @interface MyTableViewController : UITableViewController
 
+@property(nonatomic) NSArray *reminders;
+
 @end
