@@ -7,13 +7,13 @@
 //
 
 #import "SaveViewController.h"
-#import "MyTableViewController.h"
+#import "reminderTableViewController.h"
 
 @implementation SaveViewController
 
 - (IBAction)saveEvent:(id)sender {
-    [((MyTableViewController *)(self.mtvc)) addElement:self.eventName.text];
-    MyTableViewController *vc = ((MyTableViewController *)(self.mtvc));
+    [((reminderTableViewController *)(self.mtvc)) addElement:self.eventName.text];
+    reminderTableViewController *vc = ((reminderTableViewController *)(self.mtvc));
     [vc.tableView reloadData];
     [self.navigationController popToViewController:vc animated:YES];
 }
