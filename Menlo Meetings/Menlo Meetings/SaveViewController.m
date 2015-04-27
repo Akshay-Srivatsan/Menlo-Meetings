@@ -12,11 +12,9 @@
 @implementation SaveViewController
 
 - (IBAction)saveEvent:(id)sender {
-//    [((MyTableViewController *)(self.mtvc)).reminders addObject: self.eventName.text];
-    [((MyTableViewController *)(self.mtvc)) addElement:@"Hi There!"];
+    [((MyTableViewController *)(self.mtvc)) addElement:self.eventName.text];
     MyTableViewController *vc = ((MyTableViewController *)(self.mtvc));
-    NSLog(@"Salve! %ld", vc.reminders.count);
-    vc.view = nil;
-    [vc viewDidLoad];
+    [vc.tableView reloadData];
+    [self.navigationController popToViewController:vc animated:YES];
 }
 @end
