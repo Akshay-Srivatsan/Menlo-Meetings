@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SaveViewController.h"
 
 @interface MyTableViewController : UITableViewController
 
-@property(nonatomic) NSArray *reminders;
+@property(nonatomic) NSMutableArray *reminders;
+
+- (void) addElement: (NSString *)str;
+
 
 @end
