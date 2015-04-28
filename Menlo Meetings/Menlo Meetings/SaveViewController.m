@@ -7,12 +7,12 @@
 //
 
 #import "SaveViewController.h"
-#import "MyTableViewController.h"
+#import "ReminderTableViewController.h"
 
 @implementation SaveViewController
 
 -(void)viewWillAppear:(BOOL)animated {
-    MyTableViewController *vc = ((MyTableViewController *)(self.mtvc));
+    ReminderTableViewController *vc = ((ReminderTableViewController *)(self.mtvc));
     if (vc.edit)
     {
         ReminderEvent *rem = vc.event;
@@ -22,13 +22,13 @@
 }
 
 - (IBAction)saveEvent:(id)sender {
-    MyTableViewController *vc = ((MyTableViewController *)(self.mtvc));
+    ReminderTableViewController *vc = ((ReminderTableViewController *)(self.mtvc));
     if (!vc.edit)
     {
         ReminderEvent *rem = [[ReminderEvent alloc] init];
         rem.name = self.eventName.text;
         rem.details = self.eventDescription.text;
-        [((MyTableViewController *)(self.mtvc)) addElement: rem];
+        [((ReminderTableViewController *)(self.mtvc)) addElement: rem];
     }
     else
     {
