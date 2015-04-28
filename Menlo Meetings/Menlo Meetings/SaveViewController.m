@@ -18,6 +18,7 @@
         ReminderEvent *rem = vc.event;
         self.eventName.text = rem.name;
         self.eventDescription.text = rem.details;
+        self.datePicker.date = rem.date;
     }
 }
 
@@ -28,6 +29,7 @@
         ReminderEvent *rem = [[ReminderEvent alloc] init];
         rem.name = self.eventName.text;
         rem.details = self.eventDescription.text;
+        rem.date = self.datePicker.date;
         [((ReminderTableViewController *)(self.mtvc)) addElement: rem];
     }
     else
@@ -35,6 +37,7 @@
         ReminderEvent *rem = vc.event;
         rem.name = self.eventName.text;
         rem.details = self.eventDescription.text;
+        rem.date = self.datePicker.date;
         vc.event = nil;
         vc.edit = false;
     }

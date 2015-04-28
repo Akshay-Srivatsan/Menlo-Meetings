@@ -34,40 +34,48 @@
     
     cell.textLabel.text = ((ReminderEvent *)self.reminders[indexPath.row]).name;
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"MM/dd";
+    cell.detailTextLabel.text = [formatter stringFromDate:((ReminderEvent *)self.reminders[indexPath.row]).date];
+    
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.event = self.reminders[indexPath.row];
+
+
+- (void)editRow: (long)row {
+    self.event = self.reminders[row];
     self.edit = true;
     [self performSegueWithIdentifier:@"showEventDetails" sender:self];
-    
-//    NSLog(@"%ld", indexPath.row);
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self editRow:indexPath.row];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     SaveViewController *svc = (SaveViewController *)[segue destinationViewController];
-//    NSLog(@"hi");
     svc.mtvc = self;
-//    NSLog(@"bye");
     
     
 }
 
 - (void) addElement: (ReminderEvent *)rem {
     [self.reminders addObject:rem];
-    NSLog(@"%p", self.reminders);
+    self.reminders = [[NSMutableArray alloc] initWithArray:[self.reminders sortedArrayUsingComparator:^NSComparisonResult(ReminderEvent *event1, ReminderEvent *event2){
+        return [event1.date compare:event2.date];
+    }]];
 }
 
-/*-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *identifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    cell.textLabel.text = @"Hi";
-   // NSLog(@"hi");
-    return cell;
-}*/
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [self.reminders removeObjectAtIndex:indexPath.row];
+
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
 
 @end

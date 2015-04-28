@@ -12,6 +12,8 @@
 @interface SaveViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *eventName;
 @property (weak, nonatomic) IBOutlet UITextView *eventDescription;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
 - (IBAction)saveEvent:(id)sender;
 @property (nonatomic) UITableViewController *mtvc;
 

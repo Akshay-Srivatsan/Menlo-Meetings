@@ -17,6 +17,7 @@
 @property (nonatomic) ReminderEvent *event;
 
 - (void) addElement: (ReminderEvent *)rem;
+- (void) editRow: (long)row;
 
 
 @end
