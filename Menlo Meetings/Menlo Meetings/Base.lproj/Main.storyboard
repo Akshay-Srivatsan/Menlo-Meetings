@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="1487" y="-74"/>
         </scene>
-        <!--Save View Controller-->
+        <!--New Reminder-->
         <scene sceneID="5pl-iw-COs">
             <objects>
                 <viewController id="Pgp-66-ep0" customClass="SaveViewController" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-mZ-XH9">
                                 <rect key="frame" x="180" y="186" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -99,21 +99,10 @@
                                     <!--2015-04-26 23:44:26 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-Cf-zZz">
-                                <rect key="frame" x="283" y="526" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveEvent:" destination="Pgp-66-ep0" eventType="touchUpInside" id="sSq-xZ-6sL"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ACZ-Cf-zZz" secondAttribute="trailing" constant="60" id="6Jf-Ht-Tj7"/>
                             <constraint firstItem="XE5-61-myS" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfA-h5-7iF"/>
-                            <constraint firstItem="ACZ-Cf-zZz" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfF-7I-6rs"/>
                             <constraint firstItem="GYR-m8-HaU" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="55" id="P0d-bK-xEU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mLf-bz-Fw5" secondAttribute="trailing" constant="60" id="h9p-ld-LGQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="l3e-mZ-XH9" secondAttribute="trailing" constant="60" id="hWF-Rr-mzi"/>
@@ -126,6 +115,13 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="New Reminder" id="MWO-gh-U4a">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="a0O-Y6-CvY">
+                            <connections>
+                                <action selector="saveEvent:" destination="Pgp-66-ep0" id="ExO-Vs-JuC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="eventDescription" destination="l3e-mZ-XH9" id="Hfc-Qw-tAx"/>
