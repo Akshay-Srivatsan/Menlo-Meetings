@@ -37,7 +37,7 @@
                     <navigationItem key="navigationItem" title="Reminders" id="cFm-dT-yhk">
                         <barButtonItem key="rightBarButtonItem" title="New" id="GUg-Al-eEb">
                             <connections>
-                                <segue destination="Pgp-66-ep0" kind="show" id="7zW-tq-kgh"/>
+                                <segue destination="Pgp-66-ep0" kind="show" identifier="showEventDetails" id="7zW-tq-kgh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hve-sR-czu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-63"/>
+            <point key="canvasLocation" x="2205" y="-85"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

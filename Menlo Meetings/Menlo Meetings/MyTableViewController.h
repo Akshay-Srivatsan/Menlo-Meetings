@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "SaveViewController.h"
+#import "ReminderEvent.h"
 
 @interface MyTableViewController : UITableViewController
 
 @property(nonatomic) NSMutableArray *reminders;
+@property (nonatomic) Boolean edit;
+@property (nonatomic) ReminderEvent *event;
 
-- (void) addElement: (NSString *)str;
+- (void) addElement: (ReminderEvent *)rem;
 
 
 @end

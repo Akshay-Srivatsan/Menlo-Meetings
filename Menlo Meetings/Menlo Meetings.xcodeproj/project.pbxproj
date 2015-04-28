@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */; };
 		BAA0F6571AED8900005FE251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6561AED8900005FE251 /* main.m */; };
 		BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6591AED8900005FE251 /* AppDelegate.m */; };
 		BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F65C1AED8900005FE251 /* FirstViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderEvent.h; sourceTree = "<group>"; };
+		BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderEvent.m; sourceTree = "<group>"; };
 		BAA0F6511AED8900005FE251 /* Menlo Meetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menlo Meetings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA0F6551AED8900005FE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA0F6561AED8900005FE251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				BAA0F65E1AED8900005FE251 /* SecondViewController.h */,
 				BAA0F65F1AED8900005FE251 /* SecondViewController.m */,
 				BAA0F6611AED8900005FE251 /* Main.storyboard */,
+				BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */,
+				BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */,
 				BADD31861AEDA34C00EBF314 /* SaveViewController.h */,
 				BADD31871AEDA34C00EBF314 /* SaveViewController.m */,
 				BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */,
@@ -241,6 +246,7 @@
 			files = (
 				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
 				BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */,
+				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
 				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,

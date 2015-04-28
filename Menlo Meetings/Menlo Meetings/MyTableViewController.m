@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.reminders = [[NSMutableArray alloc] initWithArray: @[@"Hello", @"World"]];
+    self.reminders = [[NSMutableArray alloc] init];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -32,12 +32,16 @@
 //    NSLog(@"getting cells %ld, %ld", indexPath.row, self.reminders.count);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myTableCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = self.reminders[indexPath.row];
+    cell.textLabel.text = ((ReminderEvent *)self.reminders[indexPath.row]).name;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.event = self.reminders[indexPath.row];
+    self.edit = true;
+    [self performSegueWithIdentifier:@"showEventDetails" sender:self];
+    
 //    NSLog(@"%ld", indexPath.row);
 }
 
@@ -52,8 +56,8 @@
     
 }
 
-- (void) addElement: (NSString *)str {
-    [self.reminders addObject:str];
+- (void) addElement: (ReminderEvent *)rem {
+    [self.reminders addObject:rem];
     NSLog(@"%p", self.reminders);
 }
 

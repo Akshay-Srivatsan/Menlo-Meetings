@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReminderEvent.h"
 
 @interface SaveViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *eventName;
