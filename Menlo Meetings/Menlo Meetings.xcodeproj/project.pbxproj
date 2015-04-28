@@ -16,7 +16,7 @@
 		BAA0F6651AED8900005FE251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6641AED8900005FE251 /* Images.xcassets */; };
 		BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6661AED8900005FE251 /* LaunchScreen.xib */; };
 		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
-		BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */; };
+		BAA0F67F1AED8C61005FE251 /* reminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* reminderTableViewController.m */; };
 		BADD31881AEDA34C00EBF314 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD31871AEDA34C00EBF314 /* SaveViewController.m */; };
 		BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -49,8 +49,8 @@
 		BAA0F66D1AED8900005FE251 /* Menlo MeetingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menlo MeetingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA0F6721AED8900005FE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menlo_MeetingsTests.m; sourceTree = "<group>"; };
-		BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		BAA0F67D1AED8C61005FE251 /* reminderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reminderTableViewController.h; sourceTree = "<group>"; };
+		BAA0F67E1AED8C61005FE251 /* reminderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reminderTableViewController.m; sourceTree = "<group>"; };
 		BADD31861AEDA34C00EBF314 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		BADD31871AEDA34C00EBF314 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 				BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */,
 				BADD31861AEDA34C00EBF314 /* SaveViewController.h */,
 				BADD31871AEDA34C00EBF314 /* SaveViewController.m */,
-				BAA0F67D1AED8C61005FE251 /* MyTableViewController.h */,
-				BAA0F67E1AED8C61005FE251 /* MyTableViewController.m */,
+				BAA0F67D1AED8C61005FE251 /* reminderTableViewController.h */,
+				BAA0F67E1AED8C61005FE251 /* reminderTableViewController.m */,
 				BAA0F6641AED8900005FE251 /* Images.xcassets */,
 				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
 				BAA0F6541AED8900005FE251 /* Supporting Files */,
@@ -245,8 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
+<<<<<<< HEAD
 				BAA0F67F1AED8C61005FE251 /* MyTableViewController.m in Sources */,
 				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
+=======
+				BAA0F67F1AED8C61005FE251 /* reminderTableViewController.m in Sources */,
+>>>>>>> origin/master
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
 				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
