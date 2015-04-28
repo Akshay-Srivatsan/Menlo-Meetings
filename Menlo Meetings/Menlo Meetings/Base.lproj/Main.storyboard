@@ -84,7 +84,7 @@
                                     <outlet property="delegate" destination="Pgp-66-ep0" id="NvW-EK-KoV"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date/Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-cb-w2s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date/Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-cb-w2s">
                                 <rect key="frame" x="68" y="328" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,6 +102,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="GYR-m8-HaU" firstAttribute="top" secondItem="l2w-cb-w2s" secondAttribute="bottom" constant="20" id="BI1-0E-AZz"/>
                             <constraint firstItem="XE5-61-myS" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfA-h5-7iF"/>
                             <constraint firstItem="GYR-m8-HaU" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="55" id="P0d-bK-xEU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mLf-bz-Fw5" secondAttribute="trailing" constant="60" id="h9p-ld-LGQ"/>

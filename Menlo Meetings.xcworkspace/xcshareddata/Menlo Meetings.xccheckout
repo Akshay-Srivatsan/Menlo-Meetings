@@ -14,11 +14,11 @@
 		<string>https://github.com/Akshay-Srivatsan/Menlo-Meetings.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Menlo Meetings/Menlo Meetings.xcodeproj</string>
+	<string>Menlo Meetings.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E75CD679941430334FAAB5A3C215773F9A375ED1</key>
-		<string>../../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Akshay-Srivatsan/Menlo-Meetings.git</string>
