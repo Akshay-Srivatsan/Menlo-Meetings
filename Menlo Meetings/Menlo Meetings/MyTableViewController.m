@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Akshay Srivatsan. All rights reserved.
 //
 
-#import "reminderTableViewController.h"
+#import "MyTableViewController.h"
 
-@implementation reminderTableViewController
+@implementation MyTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
