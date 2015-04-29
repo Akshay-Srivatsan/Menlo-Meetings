@@ -50,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eN-Lv-CFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="-74"/>
+            <point key="canvasLocation" x="1461" y="0.0"/>
         </scene>
         <!--New Reminder-->
         <scene sceneID="5pl-iw-COs">
@@ -70,11 +70,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-mZ-XH9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-mZ-XH9">
                                 <rect key="frame" x="180" y="186" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfl-RM-xI0">
                                 <rect key="frame" x="254" y="157" width="92" height="21"/>
@@ -110,7 +111,7 @@
                         <constraints>
                             <constraint firstItem="GYR-m8-HaU" firstAttribute="top" secondItem="l2w-cb-w2s" secondAttribute="bottom" constant="20" id="BI1-0E-AZz"/>
                             <constraint firstItem="XE5-61-myS" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="IfA-h5-7iF"/>
-                            <constraint firstItem="GYR-m8-HaU" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="55" id="P0d-bK-xEU"/>
+                            <constraint firstItem="GYR-m8-HaU" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" id="P0d-bK-xEU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mLf-bz-Fw5" secondAttribute="trailing" constant="60" id="h9p-ld-LGQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="l3e-mZ-XH9" secondAttribute="trailing" constant="60" id="hWF-Rr-mzi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XE5-61-myS" secondAttribute="trailing" constant="60" id="k5d-hC-lIi"/>
@@ -118,7 +119,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tfl-RM-xI0" secondAttribute="trailing" constant="60" id="rvP-CI-9GR"/>
                             <constraint firstItem="l3e-mZ-XH9" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="s7E-Pc-DIi"/>
                             <constraint firstItem="tfl-RM-xI0" firstAttribute="leading" secondItem="Xfu-Vg-Jgh" secondAttribute="leadingMargin" constant="60" id="vui-C8-0RM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GYR-m8-HaU" secondAttribute="trailing" constant="55" id="z33-If-stH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYR-m8-HaU" secondAttribute="trailing" id="z33-If-stH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -138,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hve-sR-czu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205" y="-85"/>
+            <point key="canvasLocation" x="2213" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -176,7 +177,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mff-wW-p9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="-74"/>
+            <point key="canvasLocation" x="729" y="0.0"/>
         </scene>
         <!--Subscriptions-->
         <scene sceneID="u1O-hj-qf2">
@@ -195,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odk-Ny-dXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="-756"/>
+            <point key="canvasLocation" x="729" y="776"/>
         </scene>
     </scenes>
     <resources>
