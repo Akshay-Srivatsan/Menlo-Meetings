@@ -18,7 +18,8 @@
 		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
 		BAA0F67F1AED8C61005FE251 /* ReminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* ReminderTableViewController.m */; };
 		BADD31881AEDA34C00EBF314 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD31871AEDA34C00EBF314 /* SaveViewController.m */; };
-		BAFC7E481AF16A26007E8CBF /* SupscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7E471AF16A26007E8CBF /* SupscriptionTableViewController.swift */; };
+		BAFC7E4A1AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */; };
+		BAFC7E4C1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */; };
 		BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +56,8 @@
 		BADD31861AEDA34C00EBF314 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		BADD31871AEDA34C00EBF314 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		BAFC7E461AF16A26007E8CBF /* Menlo Meetings-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menlo Meetings-Bridging-Header.h"; sourceTree = "<group>"; };
-		BAFC7E471AF16A26007E8CBF /* SupscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupscriptionTableViewController.swift; sourceTree = "<group>"; };
+		BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionSearchTableViewController.swift; sourceTree = "<group>"; };
+		BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewController.swift; sourceTree = "<group>"; };
 		BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
 		BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +89,6 @@
 				BADD31871AEDA34C00EBF314 /* SaveViewController.m */,
 				BAA0F67D1AED8C61005FE251 /* ReminderTableViewController.h */,
 				BAA0F67E1AED8C61005FE251 /* ReminderTableViewController.m */,
-				BAFC7E471AF16A26007E8CBF /* SupscriptionTableViewController.swift */,
-				BAFC7E461AF16A26007E8CBF /* Menlo Meetings-Bridging-Header.h */,
 			);
 			name = Reminders;
 			sourceTree = "<group>";
@@ -114,6 +114,7 @@
 		BAA0F6531AED8900005FE251 /* Menlo Meetings */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC7E461AF16A26007E8CBF /* Menlo Meetings-Bridging-Header.h */,
 				BA6D7F671AEF39F100CFE700 /* Reminders */,
 				BAA0F6581AED8900005FE251 /* AppDelegate.h */,
 				BAA0F6591AED8900005FE251 /* AppDelegate.m */,
@@ -122,6 +123,8 @@
 				BAA0F65E1AED8900005FE251 /* SecondViewController.h */,
 				BAA0F65F1AED8900005FE251 /* SecondViewController.m */,
 				BAA0F6611AED8900005FE251 /* Main.storyboard */,
+				BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */,
+				BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */,
 				BAA0F6641AED8900005FE251 /* Images.xcassets */,
 				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
 				BAA0F6541AED8900005FE251 /* Supporting Files */,
@@ -258,11 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
+				BAFC7E4C1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift in Sources */,
 				BAA0F67F1AED8C61005FE251 /* ReminderTableViewController.m in Sources */,
+				BAFC7E4A1AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift in Sources */,
 				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
-				BAFC7E481AF16A26007E8CBF /* SupscriptionTableViewController.swift in Sources */,
 				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
 				BAA0F6571AED8900005FE251 /* main.m in Sources */,
 				BADD31881AEDA34C00EBF314 /* SaveViewController.m in Sources */,
@@ -347,6 +351,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Menlo Meetings-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -384,6 +389,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Menlo Meetings-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

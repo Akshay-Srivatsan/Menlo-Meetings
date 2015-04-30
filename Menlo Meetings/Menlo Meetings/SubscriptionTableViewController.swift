@@ -1,5 +1,5 @@
 //
-//  SupscriptionTableViewController.swift
+//  SubscriptionTableViewController.swift
 //  Menlo Meetings
 //
 //  Created by Akshay Srivatsan on 4/29/15.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SupscriptionTableViewController: UITableViewController {
-
+class SubscriptionTableViewController: UITableViewController {
+    var subscriptions = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad();
     }
@@ -20,13 +21,13 @@ class SupscriptionTableViewController: UITableViewController {
     }
     
     override func tableView(tableView : UITableView, numberOfRowsInSection section : Int) -> Int {
-        return 1;
+        return subscriptions.count;
         
     }
     
     override func tableView(tableView : UITableView, cellForRowAtIndexPath indexPath : NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("myTableCell", forIndexPath:indexPath) as! UITableViewCell;
-        cell.textLabel!.text = "Hello";
+        cell.textLabel!.text = subscriptions[indexPath.row] as? String;
         print("Test");
         return cell;
     }
