@@ -23,6 +23,11 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         searchController!.searchBar.sizeToFit();
         tableView.tableHeaderView = self.searchController!.searchBar;
         self.definesPresentationContext = true;
+        let arr = subscribedTable?.subscriptions;
+        for sub in arr!
+        {
+            subscriptions.removeAtIndex(find(subscriptions, sub)!);
+        }
         tableView.reloadData();
         super.viewDidLoad();
 
