@@ -9,7 +9,7 @@
 import UIKit
 
 class SubscriptionTableViewController: UITableViewController {
-    var subscriptions = [];
+    var subscriptions = [String]();
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -27,9 +27,14 @@ class SubscriptionTableViewController: UITableViewController {
     
     override func tableView(tableView : UITableView, cellForRowAtIndexPath indexPath : NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("myTableCell", forIndexPath:indexPath) as! UITableViewCell;
-        cell.textLabel!.text = subscriptions[indexPath.row] as? String;
+        cell.textLabel!.text = subscriptions[indexPath.row];
         print("Test");
         return cell;
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var sstvc : SubscriptionSearchTableViewController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SubscriptionSearchTableViewController;
+        sstvc.subscribedTable = self;
     }
 
 }

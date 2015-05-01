@@ -11,8 +11,9 @@ import UIKit
 class SubscriptionSearchTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
     
     var subscriptions = ["Genius Bar", "The Neighborhood", "Trivia Club"];
-    var filteredSubscriptions = [];
+    var filteredSubscriptions = [String]();
     var searchController : UISearchController?;
+    var subscribedTable : SubscriptionTableViewController?;
     
     override func viewDidLoad() {
         searchController = UISearchController(searchResultsController: nil);
@@ -34,8 +35,6 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     }
     
     override func tableView(tableView : UITableView, numberOfRowsInSection section : Int) -> Int {
-        println("Hello");
-        println(searchController!.active);
         if (!searchController!.active)
         {
             return subscriptions.count;
@@ -54,7 +53,7 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         }
         else
         {
-            cell.textLabel!.text = filteredSubscriptions[indexPath.row] as? String;
+            cell.textLabel!.text = filteredSubscriptions[indexPath.row];
         }
         
         return cell;
@@ -62,12 +61,24 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     
     func updateSearchResultsForSearchController(searchController : UISearchController)
     {
-        subscriptions.removeAll(keepCapacity: false);
-        var pred = NSPredicate(format: "self contains %@", searchController.searchBar.text);
+        filteredSubscriptions.removeAll(keepCapacity: false);
+        var pred = NSPredicate(format: "SELF contains[c] %@", searchController.searchBar.text);
         var array = (subscriptions as NSArray).filteredArrayUsingPredicate(pred);
         filteredSubscriptions = array as! [String];
         tableView.reloadData();
-        println(searchController.searchBar.text);
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (!searchController!.active)
+        {
+            subscribedTable?.subscriptions.append(subscriptions[indexPath.row]);
+        }
+        else
+        {
+            subscribedTable?.subscriptions.append(filteredSubscriptions[indexPath.row]);
+        }
+        self.navigationController?.popViewControllerAnimated(true);
+
     }
 
 }
