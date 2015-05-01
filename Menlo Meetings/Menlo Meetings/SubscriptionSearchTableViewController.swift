@@ -23,7 +23,6 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         searchController!.searchBar.sizeToFit();
         tableView.tableHeaderView = self.searchController!.searchBar;
         self.definesPresentationContext = true;
-        subscriptions.append(searchController!.searchBar.text);
         tableView.reloadData();
         super.viewDidLoad();
 
@@ -69,6 +68,7 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("Selected", indexPath.row);
         if (!searchController!.active)
         {
             subscribedTable?.subscriptions.append(subscriptions[indexPath.row]);
@@ -77,7 +77,8 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         {
             subscribedTable?.subscriptions.append(filteredSubscriptions[indexPath.row]);
         }
-        self.navigationController?.popViewControllerAnimated(true);
+        subscribedTable?.tableView.reloadData();
+        println(self.dismissViewControllerAnimated(true, completion: nil));
 
     }
 

@@ -144,7 +144,6 @@
         <!--Title-->
         <scene sceneID="Dpv-aq-j7m">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HCz-q1-wp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="eSU-iy-n65" customClass="SubscriptionSearchTableViewController" customModule="Menlo_Meetings" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4p3-5C-ODh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -179,6 +178,7 @@
                         <outlet property="tableView" destination="4p3-5C-ODh" id="oL3-Ww-6CR"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCz-q1-wp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="8iZ-uL-jvP">
                     <connections>
                         <outlet property="delegate" destination="eSU-iy-n65" id="ttT-d4-P0A"/>
