@@ -13,6 +13,17 @@ class SubscriptionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        loadInstance();
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "enteredBackground:", name: UIApplicationDidEnterBackgroundNotification, object: nil);
+    }
+    
+    func enteredBackground(sender: AnyObject) {
+        save();
+    }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        save();
     }
     
     override func numberOfSectionsInTableView(tableView : UITableView) -> Int {
@@ -35,6 +46,26 @@ class SubscriptionTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var sstvc : SubscriptionSearchTableViewController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SubscriptionSearchTableViewController;
         sstvc.subscribedTable = self;
+    }
+    
+    func filePath() -> String {
+        return NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).first!.stringByAppendingPathComponent("subscriptions");
+    }
+    
+    func loadInstance() {
+        let decodedData = NSData(contentsOfFile: filePath());
+        if let dd = decodedData
+        {
+            subscriptions = NSKeyedUnarchiver.unarchiveObjectWithData(dd) as! [String];
+            println("Okay123");
+        }
+        println("Bye123");
+    }
+    
+    @objc func save() {
+        let encodedData = NSKeyedArchiver.archivedDataWithRootObject(subscriptions);
+        encodedData.writeToFile(filePath(), atomically: true);
+        println("Hello123");
     }
 
 }
