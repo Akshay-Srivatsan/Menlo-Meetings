@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ReminderEvent : NSObject
+@interface ReminderEvent : NSObject <NSCoding>
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *details;
 @property (nonatomic) NSDate *date;
+
+
+- (void) encodeWithCoder:(NSCoder *)coder;
+- (id)initWithCoder:(NSCoder *)coder;
 
 @end

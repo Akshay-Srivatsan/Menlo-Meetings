@@ -16,6 +16,8 @@
 @property (nonatomic) Boolean edit;
 @property (nonatomic) ReminderEvent *event;
 
+
+- (void) enteredBackground: (id)sender;
 - (void) addElement: (ReminderEvent *)rem;
 - (void) editRow: (long)row;
 

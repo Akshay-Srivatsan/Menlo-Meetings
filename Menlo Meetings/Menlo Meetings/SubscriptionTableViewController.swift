@@ -39,7 +39,6 @@ class SubscriptionTableViewController: UITableViewController {
     override func tableView(tableView : UITableView, cellForRowAtIndexPath indexPath : NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("myTableCell", forIndexPath:indexPath) as! UITableViewCell;
         cell.textLabel!.text = subscriptions[indexPath.row];
-        print("Test");
         return cell;
     }
     
@@ -57,15 +56,12 @@ class SubscriptionTableViewController: UITableViewController {
         if let dd = decodedData
         {
             subscriptions = NSKeyedUnarchiver.unarchiveObjectWithData(dd) as! [String];
-            println("Okay123");
         }
-        println("Bye123");
     }
     
     @objc func save() {
         let encodedData = NSKeyedArchiver.archivedDataWithRootObject(subscriptions);
         encodedData.writeToFile(filePath(), atomically: true);
-        println("Hello123");
     }
 
 }

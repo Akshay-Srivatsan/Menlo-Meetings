@@ -73,7 +73,6 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("Selected", indexPath.row);
         if (!searchController!.active)
         {
             subscribedTable?.subscriptions.append(subscriptions[indexPath.row]);
@@ -83,8 +82,6 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
             subscribedTable?.subscriptions.append(filteredSubscriptions[indexPath.row]);
         }
         subscribedTable?.tableView.reloadData();
-        println(self.dismissViewControllerAnimated(true, completion: nil));
-
     }
 
 }

@@ -10,4 +10,21 @@
 
 @implementation ReminderEvent
 
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    if (self) {
+        self.name = [coder decodeObjectForKey:@"name"];
+        self.details = [coder decodeObjectForKey:@"details"];
+        self.date = [coder decodeObjectForKey:@"date"];
+    }
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.name forKey:@"name"];
+    [coder encodeObject:self.details forKey:@"details"];
+    [coder encodeObject:self.date forKey:@"date"];
+
+}
+
 @end

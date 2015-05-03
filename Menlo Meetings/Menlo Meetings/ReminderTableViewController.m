@@ -12,8 +12,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.reminders = [[NSMutableArray alloc] init];
+    [self loadInstance];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enteredBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self save];
+}
+
+-(NSString *)filePath {
+    return [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"reminders"];
+}
+
+-(void)enteredBackground: (id)sender {
+    [self save];
+}
+
+-(void)loadInstance {
+    NSData *decoded = [[NSData alloc] initWithContentsOfFile:[self filePath]];
+    if (decoded != nil)
+    {
+        self.reminders = [NSKeyedUnarchiver unarchiveObjectWithData:decoded];
+        [[self tableView] reloadData];
+    }
+    else
+    {
+        self.reminders = [[NSMutableArray alloc] init];
+    }
+}
+
+-(void)save {
+    NSData *encoded = [NSKeyedArchiver archivedDataWithRootObject:self.reminders];
+    [encoded writeToFile:[self filePath] atomically:YES];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -23,13 +53,10 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    NSLog(@"There are %ld elements", self.reminders.count);
-    NSLog(@"%p", self.reminders);
     return self.reminders.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSLog(@"getting cells %ld, %ld", indexPath.row, self.reminders.count);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myTableCell" forIndexPath:indexPath];
     
     cell.textLabel.text = ((ReminderEvent *)self.reminders[indexPath.row]).name;
