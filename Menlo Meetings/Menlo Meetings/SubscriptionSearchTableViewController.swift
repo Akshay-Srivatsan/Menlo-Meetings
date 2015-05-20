@@ -10,7 +10,7 @@ import UIKit
 
 class SubscriptionSearchTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
     
-    var subscriptions = ["Genius Bar", "The Neighborhood", "Trivia Club"];
+    var subscriptions = ["Genius Bar", "The Neighborhood", "Trivia Club", "AARON BROWN KNOWS SWIFT"];
     var filteredSubscriptions = [String]();
     var searchController : UISearchController?;
     var subscribedTable : SubscriptionTableViewController?;
