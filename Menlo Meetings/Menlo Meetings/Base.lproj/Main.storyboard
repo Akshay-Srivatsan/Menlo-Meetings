@@ -171,7 +171,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="DOy-zf-Via">
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="2rr-97-KiG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="2rr-97-KiG">
+                            <connections>
+                                <segue destination="49e-Tb-3d3" kind="showDetail" id="MAo-Y2-rnK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="8iZ-uL-jvP" id="uzW-Bn-8rs"/>
@@ -194,6 +198,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kV3-KM-VOK"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
