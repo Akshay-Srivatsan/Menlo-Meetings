@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -124,6 +124,18 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="New Reminder" id="MWO-gh-U4a">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="mNR-G4-rn7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wVv-2h-DKp">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vC6-pq-deS" kind="showDetail" id="BAA-hA-OaC"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="a0O-Y6-CvY">
                             <connections>
                                 <action selector="saveEvent:" destination="Pgp-66-ep0" id="ExO-Vs-JuC"/>
@@ -140,6 +152,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hve-sR-czu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2213" y="0.0"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="yAR-Zl-o2t">
+            <objects>
+                <viewController title="Location" id="vC6-pq-deS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g9h-do-iNj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wyg-BX-0Em"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c4P-Ho-I7b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj2-G7-Txa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3020" y="12"/>
         </scene>
         <!--Title-->
         <scene sceneID="Dpv-aq-j7m">
