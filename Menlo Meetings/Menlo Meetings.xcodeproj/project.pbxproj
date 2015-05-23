@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1853E6FC1B0FB3EE00B1DFD0 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853E6FB1B0FB3EE00B1DFD0 /* GoogleMapsViewController.swift */; };
 		BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */; };
 		BAA0F6571AED8900005FE251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6561AED8900005FE251 /* main.m */; };
 		BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6591AED8900005FE251 /* AppDelegate.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1853E6FB1B0FB3EE00B1DFD0 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderEvent.h; sourceTree = "<group>"; };
 		BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderEvent.m; sourceTree = "<group>"; };
 		BAA0F6511AED8900005FE251 /* Menlo Meetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menlo Meetings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 		BA6D7F671AEF39F100CFE700 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				1853E6FB1B0FB3EE00B1DFD0 /* GoogleMapsViewController.swift */,
 				BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */,
 				BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */,
 				BADD31861AEDA34C00EBF314 /* SaveViewController.h */,
@@ -264,6 +267,7 @@
 				BAFC7E4C1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift in Sources */,
 				BAA0F67F1AED8C61005FE251 /* ReminderTableViewController.m in Sources */,
 				BAFC7E4A1AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift in Sources */,
+				1853E6FC1B0FB3EE00B1DFD0 /* GoogleMapsViewController.swift in Sources */,
 				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,

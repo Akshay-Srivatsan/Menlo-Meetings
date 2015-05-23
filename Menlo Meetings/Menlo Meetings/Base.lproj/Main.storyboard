@@ -161,7 +161,7 @@
                         <viewControllerLayoutGuide type="top" id="g9h-do-iNj"/>
                         <viewControllerLayoutGuide type="bottom" id="Wyg-BX-0Em"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c4P-Ho-I7b">
+                    <view key="view" contentMode="scaleToFill" id="c4P-Ho-I7b" customClass="GoogleMapsViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
