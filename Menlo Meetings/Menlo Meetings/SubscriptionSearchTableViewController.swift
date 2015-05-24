@@ -82,6 +82,7 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
             subscribedTable?.subscriptions.append(filteredSubscriptions[indexPath.row]);
         }
         subscribedTable?.tableView.reloadData();
+        self.dismissViewControllerAnimated(true, completion: nil);
     }
 
     @IBAction func cancel(sender: AnyObject) {
