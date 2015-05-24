@@ -248,7 +248,7 @@
         <scene sceneID="khg-8i-49I">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VyF-Um-tX6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Reminders" image="first" id="Jrw-Mr-R5j"/>
+                    <tabBarItem key="tabBarItem" title="Reminders" image="check-square" id="Jrw-Mr-R5j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6aA-aQ-6l6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -314,7 +314,7 @@
         <scene sceneID="gkt-64-q3z">
             <objects>
                 <navigationController title="Subscriptions" id="vKM-lI-CTV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Subscriptions" id="0eB-7l-qu6"/>
+                    <tabBarItem key="tabBarItem" title="Subscriptions" image="rss-square" id="0eB-7l-qu6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xJj-9e-hof">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -347,6 +347,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="check-square" width="31" height="31"/>
+        <image name="rss-square" width="31" height="31"/>
     </resources>
 </document>
