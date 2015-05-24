@@ -156,7 +156,7 @@
         <!--Location-->
         <scene sceneID="yAR-Zl-o2t">
             <objects>
-                <viewController title="Location" id="vC6-pq-deS" sceneMemberID="viewController">
+                <viewController title="Location" id="vC6-pq-deS" customClass="GoogleMapsViewController" customModule="Menlo_Meetings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g9h-do-iNj"/>
                         <viewControllerLayoutGuide type="bottom" id="Wyg-BX-0Em"/>
@@ -171,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="3020" y="12"/>
         </scene>
-        <!--Title-->
+        <!--Subscriptions-->
         <scene sceneID="Dpv-aq-j7m">
             <objects>
                 <tableViewController id="eSU-iy-n65" customClass="SubscriptionSearchTableViewController" customModule="Menlo_Meetings" sceneMemberID="viewController">
@@ -200,7 +200,7 @@
                             <outlet property="delegate" destination="eSU-iy-n65" id="3bu-cm-L2p"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="DOy-zf-Via">
+                    <navigationItem key="navigationItem" title="Subscriptions" id="DOy-zf-Via">
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="2rr-97-KiG">
                             <connections>
                                 <action selector="cancel:" destination="eSU-iy-n65" id="4IK-rW-nL6"/>

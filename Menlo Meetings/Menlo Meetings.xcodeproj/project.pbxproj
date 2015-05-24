@@ -11,8 +11,6 @@
 		BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */; };
 		BAA0F6571AED8900005FE251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6561AED8900005FE251 /* main.m */; };
 		BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6591AED8900005FE251 /* AppDelegate.m */; };
-		BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F65C1AED8900005FE251 /* FirstViewController.m */; };
-		BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F65F1AED8900005FE251 /* SecondViewController.m */; };
 		BAA0F6631AED8900005FE251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6611AED8900005FE251 /* Main.storyboard */; };
 		BAA0F6651AED8900005FE251 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6641AED8900005FE251 /* Images.xcassets */; };
 		BAA0F6681AED8900005FE251 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F6661AED8900005FE251 /* LaunchScreen.xib */; };
@@ -45,10 +43,6 @@
 		BAA0F6561AED8900005FE251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAA0F6581AED8900005FE251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAA0F6591AED8900005FE251 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BAA0F65B1AED8900005FE251 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BAA0F65C1AED8900005FE251 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BAA0F65E1AED8900005FE251 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BAA0F65F1AED8900005FE251 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BAA0F6621AED8900005FE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAA0F6641AED8900005FE251 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAA0F6671AED8900005FE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -90,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA2510FB1B1285390052DC3A /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */,
+				BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */,
+			);
+			name = Subscriptions;
+			sourceTree = "<group>";
+		};
+		BA2510FC1B1285D70052DC3A /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */,
+				BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
 		BA6D7F671AEF39F100CFE700 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,18 +145,12 @@
 				BA6D7F671AEF39F100CFE700 /* Reminders */,
 				BAA0F6581AED8900005FE251 /* AppDelegate.h */,
 				BAA0F6591AED8900005FE251 /* AppDelegate.m */,
-				BAA0F65B1AED8900005FE251 /* FirstViewController.h */,
-				BAA0F65C1AED8900005FE251 /* FirstViewController.m */,
-				BAA0F65E1AED8900005FE251 /* SecondViewController.h */,
-				BAA0F65F1AED8900005FE251 /* SecondViewController.m */,
 				BAA0F6611AED8900005FE251 /* Main.storyboard */,
-				BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */,
-				BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */,
+				BA2510FB1B1285390052DC3A /* Subscriptions */,
 				BAA0F6641AED8900005FE251 /* Images.xcassets */,
 				BAA0F6661AED8900005FE251 /* LaunchScreen.xib */,
 				BAA0F6541AED8900005FE251 /* Supporting Files */,
-				BEC4E38A1AED94FE00431CD3 /* TestTableViewController.h */,
-				BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */,
+				BA2510FC1B1285D70052DC3A /* Templates */,
 			);
 			path = "Menlo Meetings";
 			sourceTree = "<group>";
@@ -275,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA0F6601AED8900005FE251 /* SecondViewController.m in Sources */,
 				BAFC7E4C1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift in Sources */,
 				BAA0F67F1AED8C61005FE251 /* ReminderTableViewController.m in Sources */,
 				BAFC7E4A1AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift in Sources */,
@@ -283,7 +288,6 @@
 				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
-				BAA0F65D1AED8900005FE251 /* FirstViewController.m in Sources */,
 				BAA0F6571AED8900005FE251 /* main.m in Sources */,
 				BADD31881AEDA34C00EBF314 /* SaveViewController.m in Sources */,
 			);

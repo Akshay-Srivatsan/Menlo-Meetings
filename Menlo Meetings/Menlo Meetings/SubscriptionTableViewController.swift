@@ -42,6 +42,13 @@ class SubscriptionTableViewController: UITableViewController {
         return cell;
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            self.subscriptions.removeAtIndex(indexPath.row);
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var sstvc : SubscriptionSearchTableViewController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SubscriptionSearchTableViewController;
         sstvc.subscribedTable = self;
