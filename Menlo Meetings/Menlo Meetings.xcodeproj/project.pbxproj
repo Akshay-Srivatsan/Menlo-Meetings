@@ -19,6 +19,8 @@
 		BAA0F6741AED8900005FE251 /* Menlo_MeetingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */; };
 		BAA0F67F1AED8C61005FE251 /* ReminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F67E1AED8C61005FE251 /* ReminderTableViewController.m */; };
 		BADD31881AEDA34C00EBF314 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADD31871AEDA34C00EBF314 /* SaveViewController.m */; };
+		BAEA7A8B1B1271CE00F18805 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEA7A8A1B1271CE00F18805 /* CoreVideo.framework */; };
+		BAEA7A8D1B1271DF00F18805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEA7A8C1B1271DF00F18805 /* CoreImage.framework */; };
 		BAFC7E4A1AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */; };
 		BAFC7E4C1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */; };
 		BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4E38B1AED94FE00431CD3 /* TestTableViewController.m */; };
@@ -55,8 +57,12 @@
 		BAA0F6731AED8900005FE251 /* Menlo_MeetingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menlo_MeetingsTests.m; sourceTree = "<group>"; };
 		BAA0F67D1AED8C61005FE251 /* ReminderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewController.h; sourceTree = "<group>"; };
 		BAA0F67E1AED8C61005FE251 /* ReminderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewController.m; sourceTree = "<group>"; };
+		BACD88EE1B1272A1007FF88F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BACD88F01B1272BA007FF88F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BADD31861AEDA34C00EBF314 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		BADD31871AEDA34C00EBF314 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
+		BAEA7A8A1B1271CE00F18805 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BAEA7A8C1B1271DF00F18805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		BAFC7E461AF16A26007E8CBF /* Menlo Meetings-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menlo Meetings-Bridging-Header.h"; sourceTree = "<group>"; };
 		BAFC7E491AF1ADB2007E8CBF /* SubscriptionSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionSearchTableViewController.swift; sourceTree = "<group>"; };
 		BAFC7E4B1AF1B3DC007E8CBF /* SubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEA7A8D1B1271DF00F18805 /* CoreImage.framework in Frameworks */,
+				BAEA7A8B1B1271CE00F18805 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,10 @@
 		BAA0F6481AED8900005FE251 = {
 			isa = PBXGroup;
 			children = (
+				BACD88F01B1272BA007FF88F /* Foundation.framework */,
+				BACD88EE1B1272A1007FF88F /* CoreFoundation.framework */,
+				BAEA7A8C1B1271DF00F18805 /* CoreImage.framework */,
+				BAEA7A8A1B1271CE00F18805 /* CoreVideo.framework */,
 				BAA0F6531AED8900005FE251 /* Menlo Meetings */,
 				BAA0F6701AED8900005FE251 /* Menlo MeetingsTests */,
 				BAA0F6521AED8900005FE251 /* Products */,

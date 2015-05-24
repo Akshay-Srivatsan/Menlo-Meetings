@@ -203,7 +203,7 @@
                     <navigationItem key="navigationItem" title="Title" id="DOy-zf-Via">
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="2rr-97-KiG">
                             <connections>
-                                <segue destination="49e-Tb-3d3" kind="showDetail" id="MAo-Y2-rnK"/>
+                                <action selector="cancel:" destination="eSU-iy-n65" id="4IK-rW-nL6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
