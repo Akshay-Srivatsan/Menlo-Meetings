@@ -132,7 +132,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vC6-pq-deS" kind="showDetail" id="BAA-hA-OaC"/>
+                                    <segue destination="eOC-dw-VB0" kind="showDetail" id="4qi-LT-nXW"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -153,23 +153,37 @@
             </objects>
             <point key="canvasLocation" x="2213" y="0.0"/>
         </scene>
-        <!--Location-->
-        <scene sceneID="yAR-Zl-o2t">
+        <!--MapView-->
+        <scene sceneID="7bS-ye-TMX">
             <objects>
-                <viewController title="Location" id="vC6-pq-deS" customClass="GoogleMapsViewController" customModule="Menlo_Meetings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapView" id="eOC-dw-VB0" customClass="MapViewController" customModule="Menlo_Meetings" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g9h-do-iNj"/>
-                        <viewControllerLayoutGuide type="bottom" id="Wyg-BX-0Em"/>
+                        <viewControllerLayoutGuide type="top" id="BFh-qJ-8SE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q0j-tO-Afb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c4P-Ho-I7b" customClass="GoogleMapsViewController">
+                    <view key="view" contentMode="scaleToFill" id="Aqb-zZ-byK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lPY-qn-e1r">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="top" secondItem="Aqb-zZ-byK" secondAttribute="topMargin" id="23X-mn-gzD"/>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="leading" secondItem="Aqb-zZ-byK" secondAttribute="leadingMargin" constant="-16" id="8p7-un-a3u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lPY-qn-e1r" secondAttribute="trailing" constant="-16" id="MEo-Y6-T5L"/>
+                            <constraint firstItem="Q0j-tO-Afb" firstAttribute="top" secondItem="lPY-qn-e1r" secondAttribute="bottom" id="cDf-hW-QBd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="lPY-qn-e1r" id="csw-XK-ceW"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aj2-G7-Txa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnX-Bs-Lz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3020" y="12"/>
+            <point key="canvasLocation" x="3057" y="16"/>
         </scene>
         <!--Subscriptions-->
         <scene sceneID="Dpv-aq-j7m">
