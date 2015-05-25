@@ -10,6 +10,8 @@ import UIKit
 
 class SubscriptionTableViewController: UITableViewController {
     var subscriptions = [String]();
+    //We should insert the Detail Label Outlet Here
+    var details = [String]();
     
     override func viewDidLoad() {
         super.viewDidLoad();
