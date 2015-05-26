@@ -10,8 +10,14 @@ import UIKit
 
 class SubscriptionSearchTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
     
-    var subscriptions = ["Genius Bar", "The Neighborhood", "Trivia Club", "Robotics Club", "Mock Trial"];
-    var filteredSubscriptions = [String]();
+    var subscriptions = [
+        Subscription(name: "Genius Bar", teacher: "Ms. Miller"),
+        Subscription(name: "The Neighborhood", teacher: "Mr. Thibodeaux"),
+        Subscription(name: "Trivia Club", teacher: "Mr. Steinberg"),
+        Subscription(name: "Junior Classical League", teacher: "Mag. Vasquez"),
+        Subscription(name: "Mock Trial", teacher: "Mr. Devitt")
+    ];
+    var filteredSubscriptions = [Subscription]();
     var searchController : UISearchController?;
     var subscribedTable : SubscriptionTableViewController?;
     
@@ -23,8 +29,8 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         searchController!.searchBar.sizeToFit();
         tableView.tableHeaderView = self.searchController!.searchBar;
         self.definesPresentationContext = true;
-        let arr = subscribedTable?.subscriptions;
-        for sub in arr!
+        let arr : [Subscription]! = subscribedTable?.subscriptions;
+        for sub in arr
         {
             subscriptions.removeAtIndex(find(subscriptions, sub)!);
         }
@@ -53,11 +59,13 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("searchTableCell", forIndexPath:indexPath) as! UITableViewCell;
         if (!searchController!.active)
         {
-            cell.textLabel!.text = subscriptions[indexPath.row];
+            cell.textLabel!.text = subscriptions[indexPath.row].name;
+            cell.detailTextLabel!.text = subscriptions[indexPath.row].teacher;
         }
         else
         {
-            cell.textLabel!.text = filteredSubscriptions[indexPath.row];
+            cell.textLabel!.text = filteredSubscriptions[indexPath.row].name;
+            cell.detailTextLabel!.text = filteredSubscriptions[indexPath.row].teacher;
         }
         
         return cell;
@@ -66,9 +74,9 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     func updateSearchResultsForSearchController(searchController : UISearchController)
     {
         filteredSubscriptions.removeAll(keepCapacity: false);
-        var pred = NSPredicate(format: "SELF contains[c] %@", searchController.searchBar.text);
+        var pred = NSPredicate(format: "SELF.name contains[c] %@", searchController.searchBar.text);
         var array = (subscriptions as NSArray).filteredArrayUsingPredicate(pred);
-        filteredSubscriptions = array as! [String];
+        filteredSubscriptions = array as! [Subscription];
         tableView.reloadData();
     }
     
@@ -82,6 +90,7 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
             subscribedTable?.subscriptions.append(filteredSubscriptions[indexPath.row]);
         }
         subscribedTable?.tableView.reloadData();
+        self.dismissViewControllerAnimated(true, completion: nil);
         self.dismissViewControllerAnimated(true, completion: nil);
     }
 

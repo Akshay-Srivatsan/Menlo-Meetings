@@ -9,9 +9,8 @@
 import UIKit
 
 class SubscriptionTableViewController: UITableViewController {
-    var subscriptions = [String]();
-    //We should insert the Detail Label Outlet Here
-    var details = [String]();
+    
+    var subscriptions = [Subscription]();
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -40,7 +39,8 @@ class SubscriptionTableViewController: UITableViewController {
     
     override func tableView(tableView : UITableView, cellForRowAtIndexPath indexPath : NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("myTableCell", forIndexPath:indexPath) as! UITableViewCell;
-        cell.textLabel!.text = subscriptions[indexPath.row];
+        cell.textLabel!.text = subscriptions[indexPath.row].name;
+        cell.detailTextLabel!.text = subscriptions[indexPath.row].teacher;
         return cell;
     }
     
@@ -64,7 +64,7 @@ class SubscriptionTableViewController: UITableViewController {
         let decodedData = NSData(contentsOfFile: filePath());
         if let dd = decodedData
         {
-            subscriptions = NSKeyedUnarchiver.unarchiveObjectWithData(dd) as! [String];
+            subscriptions = NSKeyedUnarchiver.unarchiveObjectWithData(dd) as! [Subscription];
         }
     }
     
