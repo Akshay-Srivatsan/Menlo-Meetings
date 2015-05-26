@@ -166,19 +166,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lPY-qn-e1r">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naM-BH-z0M">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Event Location" id="CgI-UL-Mdb">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Xka-8f-E0Y">
+                                            <connections>
+                                                <action selector="showSearchBar:" destination="eOC-dw-VB0" id="xiZ-CZ-PjP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lPY-qn-e1r" firstAttribute="top" secondItem="Aqb-zZ-byK" secondAttribute="topMargin" id="23X-mn-gzD"/>
                             <constraint firstItem="lPY-qn-e1r" firstAttribute="leading" secondItem="Aqb-zZ-byK" secondAttribute="leadingMargin" constant="-16" id="8p7-un-a3u"/>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="top" secondItem="naM-BH-z0M" secondAttribute="bottom" id="9o1-He-f40"/>
+                            <constraint firstAttribute="trailing" secondItem="lPY-qn-e1r" secondAttribute="trailing" id="Cq5-Bc-lzt"/>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="top" secondItem="naM-BH-z0M" secondAttribute="bottom" id="IQE-jo-dT4"/>
+                            <constraint firstAttribute="trailing" secondItem="naM-BH-z0M" secondAttribute="trailing" id="Kgj-lx-w4n"/>
+                            <constraint firstItem="Q0j-tO-Afb" firstAttribute="top" secondItem="lPY-qn-e1r" secondAttribute="bottom" id="LeA-1u-tmd"/>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="top" secondItem="naM-BH-z0M" secondAttribute="bottom" id="Lxd-sp-FI8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lPY-qn-e1r" secondAttribute="trailing" constant="-16" id="MEo-Y6-T5L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="naM-BH-z0M" secondAttribute="trailing" constant="-16" id="Qjt-XD-CcA"/>
+                            <constraint firstItem="naM-BH-z0M" firstAttribute="top" secondItem="BFh-qJ-8SE" secondAttribute="bottom" id="awU-VC-ZK0"/>
+                            <constraint firstItem="naM-BH-z0M" firstAttribute="top" secondItem="BFh-qJ-8SE" secondAttribute="bottom" id="bin-HF-J6Y"/>
                             <constraint firstItem="Q0j-tO-Afb" firstAttribute="top" secondItem="lPY-qn-e1r" secondAttribute="bottom" id="cDf-hW-QBd"/>
+                            <constraint firstItem="naM-BH-z0M" firstAttribute="leading" secondItem="Aqb-zZ-byK" secondAttribute="leadingMargin" constant="-16" id="fGL-O4-HSJ"/>
+                            <constraint firstItem="lPY-qn-e1r" firstAttribute="leading" secondItem="Aqb-zZ-byK" secondAttribute="leading" id="gUE-xM-Eq4"/>
+                            <constraint firstItem="naM-BH-z0M" firstAttribute="leading" secondItem="Aqb-zZ-byK" secondAttribute="leading" id="x2w-9f-4ix"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="map" destination="lPY-qn-e1r" id="csw-XK-ceW"/>
+                        <outlet property="mapView" destination="lPY-qn-e1r" id="T7T-fc-Wja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnX-Bs-Lz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
