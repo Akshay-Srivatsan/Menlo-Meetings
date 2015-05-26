@@ -74,7 +74,9 @@ class SubscriptionSearchTableViewController: UITableViewController, UISearchBarD
     func updateSearchResultsForSearchController(searchController : UISearchController)
     {
         filteredSubscriptions.removeAll(keepCapacity: false);
-        var pred = NSPredicate(format: "SELF.name contains[c] %@", searchController.searchBar.text);
+//        var pred = NSPredicate(format: "SELF.name contains[c] %@", searchController.searchBar.text);
+        var query = "*" + searchController.searchBar.text + "*";
+        var pred = NSPredicate(format: "(SELF.name like[c] %@) OR (SELF.teacher like[c] %@)", query, query);
         var array = (subscriptions as NSArray).filteredArrayUsingPredicate(pred);
         filteredSubscriptions = array as! [Subscription];
         tableView.reloadData();
