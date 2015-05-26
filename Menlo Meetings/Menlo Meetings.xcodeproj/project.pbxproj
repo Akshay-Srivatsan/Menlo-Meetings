@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180CE6A01B12D29200975798 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CE69F1B12D29200975798 /* MapViewController.swift */; };
+		1811AC451B14EB2D003E4E0A /* PinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811AC441B14EB2D003E4E0A /* PinDetailsViewController.swift */; };
 		BA2511001B128CF70052DC3A /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2510FF1B128CF70052DC3A /* Subscription.swift */; };
 		BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */; };
 		BAA0F6571AED8900005FE251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F6561AED8900005FE251 /* main.m */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		180CE69F1B12D29200975798 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1811AC441B14EB2D003E4E0A /* PinDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinDetailsViewController.swift; sourceTree = "<group>"; };
 		BA2510FF1B128CF70052DC3A /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderEvent.h; sourceTree = "<group>"; };
 		BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderEvent.m; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		BA6D7F671AEF39F100CFE700 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				1811AC441B14EB2D003E4E0A /* PinDetailsViewController.swift */,
 				180CE69F1B12D29200975798 /* MapViewController.swift */,
 				BA42DFF61AEF20EB002159B3 /* ReminderEvent.h */,
 				BA42DFF71AEF20EB002159B3 /* ReminderEvent.m */,
@@ -290,6 +293,7 @@
 				180CE6A01B12D29200975798 /* MapViewController.swift in Sources */,
 				BA2511001B128CF70052DC3A /* Subscription.swift in Sources */,
 				BA42DFF81AEF20EB002159B3 /* ReminderEvent.m in Sources */,
+				1811AC451B14EB2D003E4E0A /* PinDetailsViewController.swift in Sources */,
 				BAA0F65A1AED8900005FE251 /* AppDelegate.m in Sources */,
 				BEC4E38C1AED94FE00431CD3 /* TestTableViewController.m in Sources */,
 				BAA0F6571AED8900005FE251 /* main.m in Sources */,

@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-m8-HaU">
-                                <rect key="frame" x="72" y="362" width="456" height="162"/>
+                                <rect key="frame" x="72" y="362" width="419" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="ZFm-YY-Z0v"/>
                                 </constraints>
@@ -106,6 +106,15 @@
                                     <!--2015-04-26 23:44:26 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOt-te-8fx">
+                                <rect key="frame" x="235" y="526" width="92" height="30"/>
+                                <state key="normal" title="Add Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eOC-dw-VB0" kind="show" id="f5G-x3-tre"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -124,18 +133,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="New Reminder" id="MWO-gh-U4a">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="mNR-G4-rn7">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wVv-2h-DKp">
-                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Location">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eOC-dw-VB0" kind="showDetail" id="4qi-LT-nXW"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="a0O-Y6-CvY">
                             <connections>
                                 <action selector="saveEvent:" destination="Pgp-66-ep0" id="ExO-Vs-JuC"/>
@@ -172,6 +169,11 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Event Location" id="CgI-UL-Mdb">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="dJu-6t-qsL">
+                                            <connections>
+                                                <action selector="showMapOptions:" destination="eOC-dw-VB0" id="9jE-rf-zhz"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Xka-8f-E0Y">
                                             <connections>
                                                 <action selector="showSearchBar:" destination="eOC-dw-VB0" id="xiZ-CZ-PjP"/>
@@ -202,11 +204,46 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="lPY-qn-e1r" id="T7T-fc-Wja"/>
+                        <outlet property="showOptionsBtn" destination="dJu-6t-qsL" id="uk8-ab-Jep"/>
+                        <segue destination="GdL-QH-jRu" kind="show" identifier="PinDetails" id="j9A-9v-m2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnX-Bs-Lz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3057" y="16"/>
+        </scene>
+        <!--Pin Details View Controller-->
+        <scene sceneID="SLu-Vd-wsJ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GdL-QH-jRu" customClass="PinDetailsViewController" customModule="Menlo_Meetings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aIF-Db-Jbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kq4-zr-tjh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XKB-ai-kuz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TCV-j5-oxD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kq4-zr-tjh" firstAttribute="top" secondItem="TCV-j5-oxD" secondAttribute="bottom" id="6m7-or-1s8"/>
+                            <constraint firstItem="TCV-j5-oxD" firstAttribute="top" secondItem="aIF-Db-Jbj" secondAttribute="bottom" constant="44" id="drM-o0-2DQ"/>
+                            <constraint firstAttribute="trailing" secondItem="TCV-j5-oxD" secondAttribute="trailing" id="fue-UY-srz"/>
+                            <constraint firstItem="TCV-j5-oxD" firstAttribute="leading" secondItem="XKB-ai-kuz" secondAttribute="leading" id="rd5-3e-k1a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="TCV-j5-oxD" id="ymK-Lt-BMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAq-vq-anu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3744" y="12"/>
         </scene>
         <!--Subscriptions-->
         <scene sceneID="Dpv-aq-j7m">
